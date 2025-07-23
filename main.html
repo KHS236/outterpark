@@ -5,683 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- <link rel="stylesheet" href="./css/css.css"> -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
 
 
-    <style>
 
-        *{box-sizing: border-box;}
-        body {
-            width: 1280px;
-            /* height: 1080px; */
-            margin: 0 auto;
-            /* border: 1px solid; */
-            padding: 10px;
-        }
-        .outer-wrapper {
-            margin: 0 auto;
-        }
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        /* .layout-01{
-            max-width:1280px;
-            margin:0 auto;
-        } */
-        @font-face {
-            font-family:'logo-font' ;
-            src: url('./BnviitLasik.ttf');
-            font-style:normal;
-        }
-
-        /* header */
-        .outer-wrapper>header>.mainheader-wrapper {}
-
-        /* main-header */
-        .outer-wrapper>header>.mainheader-wrapper>.main-header {
-            width: 100%;
-            height: 70px;
-            /* margin:0 278px; */
-            padding: 0 20px;
-            /* border: 1px solid; */
-            display: flex;
-            align-items: center;
-
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.main-logo {
-            width: 144px;
-            margin: 0px 12px 0px 0px;
-            color:rgb(6, 6, 183);
-            font-family:'logo-font';
-            font-size:16px;
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.search{
-            width: 354px;
-            height: 46px;
-            border:1px solid;
-            border-radius:10px;
-            display:flex;
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.search>button>.submit-img{
-            width:20px;
-            height:46px;
-            outline:none;
-            background:none;
-            border:none;
-            
-        }
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.search>.search-text{
-            width: 310px; 
-            height: 44px;
-            outline:none;
-            background:none;
-            border:none;
-        }
-        
-
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.event {
-            width: 180px;
-            height: 50px;
-            /* border: 1px solid; */
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.page-change {
-            /* border:1px solid; */
-            margin-left: 260px;
-            font-family:'logo-font';
-            font-size:12px;
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.main-header>.page-change>a {
-            margin: 0 10px;
-        }
-
-        /* sub-header */
-        .outer-wrapper>header>.mainheader-wrapper>.sub-header {
-            width: 100%;
-            height: 54px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-
-        .outer-wrapper>header>.mainheader-wrapper>.sub-header>.service-menu {
-            display: flex;
-            /* border:1px solid; */
-            width: 184px;
-            height: 100%;
-            align-items: center;
-            font-size:20px
-
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.sub-header>.service-menu>li {
-            width: 48px;
-            height: 100%;
-            margin: 0 10px;
-            text-align: center;
-            /* border:1px solid; */
-
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.sub-header>.service {
-            width: 150px;
-            height: 100%;
-            display: flex;
-            margin: 0 0 0 900px;
-            justify-content: space-between;
-            /* border:1px solid; */
-
-        }
-
-        .outer-wrapper>header>.mainheader-wrapper>.sub-header>.service>li {
-            width: 50px;
-            height: 100%;
-        }
-
-        /* category-header */
-        .outer-wrapper>header>.subheader-wrapper {
-            /* width:100%; */
-            height: 58px;
-            /* border: 1px solid; */
-            background-color:#fbfbfb;
-            border-top:0.1rem solid #b6bdc7;
-
-        }
-
-        .outer-wrapper>header>.subheader-wrapper>.menu-header {
-            padding: 15px;
-            display: flex;
-            /* border:1px solid; */
-            align-items: center;
-        }
-
-        .outer-wrapper>header>.subheader-wrapper>.menu-header>.category-menu1 {
-            width: 804px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            /* border:1px solid; */
-            justify-content: space-between;
-        }
-
-        .outer-wrapper>header>.subheader-wrapper>.menu-header>.category-menu1>li {
-            margin: 0 8px;
-        }
-
-        .outer-wrapper>header>.subheader-wrapper>.menu-header>.category-menu2 {
-            width: 290px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            /* border:1px solid; */
-            margin: 0 0 0 150px;
-        }
-
-
-
-        .mwrapper{
-            max-width: 1260px; 
-            margin: 10px auto; 
-            padding: 0 30px;
-        }
-        
-        .mwrapper>.con1{
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            
-        }
-        .mwrapper>.con1>.con1img{
-            
-            /* border: 1px solid black; */
-            /* border-radius: 15px;
-            width: 600px;
-            height: 300px; */
-            
-        }
-        .mwrapper>.con1>.con1img>img{
-            width: 620px;
-            height: 350px;
-            border-radius: 15px;
-        }
-
-        .mwrapper>.con2{}
-        .mwrapper>.con2>.con2w{
-            justify-content: center;
-            display: grid;
-            text-align: center;
-        }
-        .mwrapper>.con2>.con2w>h2{
-            font-size: 2rem;
-            margin: 10px 0;
-        }
-        .mwrapper>.con2>.con2w>.con2txt{
-            color: rgb(123, 122, 122);
-            font-size: 19px;
-        }
-        .mwrapper>.con2>.con2btn{
-            justify-content: center;
-            display: flex;
-            gap: 20px;
-            list-style-type: none;
-            margin: 20px;
-        }        
-        .mwrapper>.con2>.con2btn>li:nth-child(1){
-            background-color: rgb(49, 48, 48);
-        }
-        .mwrapper>.con2>.con2btn>li{
-            border: 1px solid lightgray;
-            padding: 10px 20px;
-            border-radius: 30px;
-        }
-        .mwrapper>.con2>.con2btn>li>a{
-            font-size: 14px;
-            font-weight: 500;
-            color: black;
-            /* text-decoration: none; */
-        }
-        .mwrapper>.con2>.con2btn>li:nth-child(1)>a{
-            color: white;
-        }
-
-
-
-
-
-        .mwrapper>.con2>.con2main{
-            display: flex;
-            justify-content: space-between;
-        }
-        .mwrapper>.con2>.con2main>.card-list{
-            border: 1px solid lightgray;
-            width: 380px;
-            height: 400px;
-            border-radius: 15px;
-
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card{
-            text-decoration: none;
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-img{
-            width: auto;
-            height: 280px;
-            /* border: 1px solid black; */
-            border-radius: 15px 15px 0 0;
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-img>img{
-            width: 100%;
-            height: 100%;    
-            border-radius: 15px 15px 0 0;
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-content{
-            margin: 20px 0;
-            
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-content>p{
-            margin-bottom: 0;
-            margin-toP: 0;
-            color: black;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-content>p:nth-child(1){
-            font-size: 1rem;
-            color: rgb(49, 83, 238);
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-content>p:nth-child(2){
-            font-size: 0.7rem;
-            
-        }
-        .mwrapper>.con2>.con2main>.card-list>.card>.card-content>p:nth-child(3){
-            font-size: 1.1rem;
-        }
-        
-        .mwrapper>.con2>.con2btn2{
-            margin: 40px 0;
-            display: flex;
-            justify-content: center;
-        }
-        .mwrapper>.con2>.con2btn2>a{
-            justify-content: center;
-            color: black;
-            /* text-decoration: none; */
-            border: 1px solid rgb(144, 144, 144);
-            border-radius: 30px;
-            padding: 10px 25px;
-            font-weight: 600;
-        
-        }
-        .crazy{
-            height: 8px;
-            background-color: rgb(236, 241, 244);
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-
-        .mwrapper>.con3{}
-        /* 경험은 좀 되는 거 같아,, */
-
-
-        
-        .mwrapper>.con4{
-
-        }
-
-        .mwrapper>.con4>.con4w{
-            justify-content: center;
-            display: grid;
-            text-align: center;
-            
-        }
-        .mwrapper>.con4>.con4w>h2{
-            font-size: 2rem;
-            margin: 10px 0;
-
-        }
-        .mwrapper>.con4>.con4w>.con4txt{
-            font-size: 19px;
-            color: rgb(123, 122, 122);
-
-        }
-        .mwrapper>.con4>.con4btn{
-            justify-content: center;
-            display: flex;
-            gap: 20px;
-            list-style-type: none;
-            margin: 20px;
-        }
-        .mwrapper>.con4>.con4btn>li:nth-child(1){
-            background-color: rgb(49, 48, 48);
-        }
-        .mwrapper>.con4>.con4btn>li{
-            border: 1px solid lightgray;
-            padding: 10px 20px;
-            border-radius: 30px
-
-        }
-        .mwrapper>.con4>.con4btn>li>a{
-            font-size: 14px;
-            font-weight: 500;
-            color: black;
-            /* text-decoration: none;  */
-        }
-        .mwrapper>.con4>.con4btn>li:nth-child(1)>a{
-            color: white;
-        }
-
-        .mwrapper>.con4>.con4main{
-            display: flex;
-            justify-content: space-between;
-            /* gap: 10px; */
-        }
-        .mwrapper>.con4>.con4main>.con4card-list{
-            border: 1px solid lightgray;
-            width: 280px;
-            height: 470px;
-            border-radius: 15px;
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card{
-            /* text-decoration: none; */
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-img{
-            /* width: auto; */
-            height: 340px;
-            /* border: 1px solid black; */
-            /* border-radius: 15px 15px 0 0; */
-            
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-img>img{
-            width: 100%;
-            height: 100%;
-            border-radius: 15px 15px 0 0;
-
-
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-content{
-            margin: 20px 0;
-            
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-content>p{
-            margin-bottom: 0;
-            margin-toP: 0;
-            color: black;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-content>p:nth-child(1){
-            font-size: 1.2rem;
-
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-content>p:nth-child(2){
-            font-size: 0.7rem;
-        }
-        .mwrapper>.con4>.con4main>.con4card-list>.con4card>.con4card-content>p:nth-child(3){
-            font-size: 1.1rem;
-            
-        }
-        
-        .mwrapper>.con4>.con4btn2{
-            margin: 40px 0;
-            display: flex;
-            justify-content: center;
-        }
-        .mwrapper>.con4>.con4btn2>a{
-            justify-content: center;
-            color: black;
-            /* text-decoration: none; */
-            border: 1px solid rgb(144, 144, 144);
-            border-radius: 30px;
-            padding: 10px 25px;
-            font-weight: 600;
-        
-        }
-        
-        .con5{
-            
-        }
-        .con5>.con5w{
-            justify-content: center;
-            display: flex;
-            text-align: center;
-            /* vertical-align: middle; */
-        }
-        .con5>.con5w>h2{
-            font-size: 2rem;
-            margin: 10px 0;
-        }
-        .con5>.con5w>.live{
-            width: 50px;
-            background-color: red;
-            color: white;
-            margin: auto 10px;
-            font-size: 1.4rem;
-            font-weight: 500;
-        }
-        .con5>.con5main{
-            justify-content: space-between;
-            width: auto;
-            display: flex;
-            gap: 20px;
-        }
-        .con5>.con5main>.con5img{
-            width: 300px;
-            height: 410px;
-            /* border: 1px solid; */
-            border-radius: 15px;
-            position: relative;
-
-            
-        }
-        .con5>.con5main>.con5img>img{
-            border-radius: 15px;
-            width: 100%;
-            height: 100%;
-            display: block;
-            
-        }
-        .con5>.con5main>.con5img>.overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.4);
-            border-radius: 15px;
-
-        }
-        .con5>.con5main>.con5img>p{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            
-        }
-        .con5>.con5main>.con5img>.c5tag{
-
-            border: 1px solid black;
-            border-radius: 30px;
-            padding: 6px;
-            background-color: black;
-            color: white;
-            font-size: 0.8rem;
-            font-weight: 600;
-
-        }
-        .con5>.con5main>.con5img>.c5txt{
-            top: 80px;
-            text-align: left;
-            margin: 0 10px;
-            font-size: large;
-            font-weight: 600;
-            color: white;
-        }
-        .con5>.con5main>.con5img>.date{
-            top: 200px;
-            left: 65px;
-            text-align: center;
-            font-weight: 400;
-            font-size: 1.7rem;
-            color: white;
-        }
-        .con5>.con5main>.con5img>.time{
-            top: 230px;
-            left: 90px;
-            text-align: center;
-            font-weight: 400;
-            font-size: 2.5rem;
-            color: white;
-
-
-        }
-        .con5>.con5btn{
-            margin: 40px 0;
-            display: flex;
-            justify-content: center;
-        }
-        .con5>.con5btn>a{
-            justify-content: center;
-            color: black;
-            /* text-decoration: none; */
-            border: 1px solid rgb(144, 144, 144);
-            border-radius: 30px;
-            padding: 10px 25px;
-            font-weight: 600;
-        }
-
-
-
-
-
-
-
-
-
-        footer{
-        }
-        footer>hr{
-            border: none;
-            height: 0.2px;
-            background-color: rgb(164, 164, 164);
-        }
-
-        footer>.footnav{
-            max-width: 1260px; 
-            margin: 0 auto; 
-            padding: 0 30px;
-            display: flex;
-            list-style-type: none;
-            justify-content: space-around;
-        }
-        footer>.footnav>li{
-            font-size: 0.9rem;
-        }
-        .dropdown{
-            position: relative;
-        }
-        .dropdown>.dropdown-menu{
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            border: 1px solid lightgray;
-            border-radius: 15px;
-            padding: 5px 0;
-            list-style: none;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .dropdown>.dropdown-menu>li{
-            padding: 5px 20px;
-
-        }
-        .dropdown>.dropdown-menu>li>a{
-            text-decoration: none;
-            color: black;
-            white-space: nowrap;
-
-        }
-        .dropdown:hover .dropdown-menu{
-            display: block;
-        }
-
-
-
-
-        footer>.footnav>li>a{
-            color: black;
-            text-decoration: none;
-        }
-        footer>.footnav>li>span{
-            user-select: none;
-        }
-        footer>.footnav>li:nth-child(5){
-            font-weight: 700;
-        }
-
-
-        footer>.footmain{
-            max-width: 1260px; 
-            margin: 0 auto; 
-            padding: 0 30px;
-            justify-content: space-between;
-            display: flex;
-
-        }
-        footer>.footmain>.footsection{
-            font-size: 12px;
-        }
-        
-        
-        footer>.footbar{
-            max-width: 1260px; 
-            margin: 10px auto; 
-            padding: 0 30px;
-            font-size: 0.7rem;
-            text-align: left;
-            color: gray;
-
-        }
-
-
-
-
-
-
-
-
-    </style>
 
 
 
 
 </head>
 <body>
-
-    
-
-
-    <div class="wrapper">
-        <header>
-            <div class="outer-wrapper">
+    <div class="outer-wrapper layoutCenter">
         <header>
             <div class="mainheader-wrapper layout-01">
                 <div class="main-header">
@@ -734,10 +69,7 @@
             </div>
 
         </header>
-    </div>
-            <div class="top-header"></div>
-            <nav></nav>
-        </header>
+      
         <main>
             <section>
                 <div class="mwrapper">
@@ -751,7 +83,7 @@
                     </div>
                     <div class="con2">
                         <div class="con2w">
-                            <h2>투어 특가</h2>
+                            <h2 >투어 특가</h2>
                             <div class="con2txt">마감임박! 금주의 특가 여행 추천</div>
                         </div>
                         <ul class="con2btn">
@@ -805,82 +137,82 @@
                     </div>
                     <div class="crazy"></div>
                     <!-- <div class="con3"> 3은 안 할래요 ㅠㅠ-->
-
-
-                    <div class="con4">
-                        <div class="con4w">
-                            <h2>티켓 랭킹</h2>
-                            <div class="con4txt">오늘 뭐 볼까? 지금 HOT한 공연</div>
+                        
+                        
+                        <div class="con4">
+                            <div class="con4w">
+                                <h2>티켓 랭킹</h2>
+                                <div class="con4txt">오늘 뭐 볼까? 지금 HOT한 공연</div>
+                            </div>
+                            <ul class="con4btn">
+                                <li><a href="javascript:void(0)">뮤지컬</a></li>
+                                <li><a href="javascript:void(0)">콘서트</a></li>
+                                <li><a href="javascript:void(0)">스포츠</a></li>
+                                <li><a href="javascript:void(0)">전시/행사</a></li>
+                                <li><a href="javascript:void(0)">클래식/무용</a></li>
+                                <li><a href="javascript:void(0)">아동/가족</a></li>
+                                <li><a href="javascript:void(0)">연극</a></li>
+                                <li><a href="javascript:void(0)">레저/캠핑</a></li>
+                            </ul>
+                            <div class="con4main">
+                                <div class="con4card-list">
+                                    <a href="#" class="con4card">
+                                        <div class="con4card-img">
+                                            <img src="./pic/c4p1.jpg" alt="연극 사진">
+                                        </div>
+                                        <div class="con4card-content">
+                                            <p class="con4card-title">뮤지컬 &lt;멤피스&gt;</p>
+                                            <p class="con4card-where">충무아트센터 대극장</p>
+                                            <p class="con4card-when">2025.06.17 - 2025.09.21</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="con4card-list">
+                                    <a href="#" class="con4card">
+                                        <div class="con4card-img">
+                                            <img src="./pic/c4p2.jpg" alt="연극 사진">
+                                        </div>
+                                        <div class="con4card-content">
+                                            <p class="con4card-title">뮤지컬 &lt;팬텀&gt; 10주년 기념 공연</p>
+                                            <p class="con4card-where">세종문화회관 대극장</p>
+                                            <p class="con4card-when">2025.05.31 - 2025.8.11</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="con4card-list">
+                                    <a href="#" class="con4card">
+                                        <div class="con4card-img">
+                                            <img src="./pic/c4p3.jpg" alt="연극 사진">
+                                        </div>
+                                        <div class="con4card-content">
+                                            <p class="con4card-title">뮤지컬 &lt;맘마미아!&gt;</p>
+                                            <p class="con4card-where">LG아트센터 서울 LG SIGNATURE 홀</p>
+                                            <p class="con4card-when">2025.07.26 - 2025.10.25</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="con4card-list">
+                                    <a href="#" class="con4card">
+                                        <div class="con4card-img">
+                                            <img src="./pic/c4p4.jpg" alt="연극 사진">
+                                        </div>
+                                        <div class="con4card-content">
+                                            <p class="con4card-title">뮤지컬 &lt위키드&gt; 내한 공연(WICKED The Musical)</p>
+                                            <p class="con4card-where">블루스퀘어 신한카드홀</p>
+                                            <p class="con4card-when">2025.07.12 - 2025.10.26</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="con4btn2">
+                                <a href="javascript:void(0)">티켓 홈 바로가기 ></a>
+                            </div>
                         </div>
-                        <ul class="con4btn">
-                            <li><a href="javascript:void(0)">뮤지컬</a></li>
-                            <li><a href="javascript:void(0)">콘서트</a></li>
-                            <li><a href="javascript:void(0)">스포츠</a></li>
-                            <li><a href="javascript:void(0)">전시/행사</a></li>
-                            <li><a href="javascript:void(0)">클래식/무용</a></li>
-                            <li><a href="javascript:void(0)">아동/가족</a></li>
-                            <li><a href="javascript:void(0)">연극</a></li>
-                            <li><a href="javascript:void(0)">레저/캠핑</a></li>
-                        </ul>
-                        <div class="con4main">
-                            <div class="con4card-list">
-                                <a href="#" class="con4card">
-                                    <div class="con4card-img">
-                                        <img src="./pic/c4p1.jpg" alt="연극 사진">
-                                    </div>
-                                    <div class="con4card-content">
-                                        <p class="con4card-title">뮤지컬 &lt;멤피스&gt;</p>
-                                        <p class="con4card-where">충무아트센터 대극장</p>
-                                        <p class="con4card-when">2025.06.17 - 2025.09.21</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="con4card-list">
-                                <a href="#" class="con4card">
-                                    <div class="con4card-img">
-                                        <img src="./pic/c4p2.jpg" alt="연극 사진">
-                                    </div>
-                                    <div class="con4card-content">
-                                        <p class="con4card-title">뮤지컬 &lt;팬텀&gt; 10주년 기념 공연</p>
-                                        <p class="con4card-where">세종문화회관 대극장</p>
-                                        <p class="con4card-when">2025.05.31 - 2025.8.11</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="con4card-list">
-                                <a href="#" class="con4card">
-                                    <div class="con4card-img">
-                                        <img src="./pic/c4p3.jpg" alt="연극 사진">
-                                    </div>
-                                    <div class="con4card-content">
-                                        <p class="con4card-title">뮤지컬 &lt;맘마미아!&gt;</p>
-                                        <p class="con4card-where">LG아트센터 서울 LG SIGNATURE 홀</p>
-                                        <p class="con4card-when">2025.07.26 - 2025.10.25</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="con4card-list">
-                                <a href="#" class="con4card">
-                                    <div class="con4card-img">
-                                        <img src="./pic/c4p4.jpg" alt="연극 사진">
-                                    </div>
-                                    <div class="con4card-content">
-                                        <p class="con4card-title">뮤지컬 &lt위키드&gt; 내한 공연(WICKED The Musical)</p>
-                                        <p class="con4card-where">블루스퀘어 신한카드홀</p>
-                                        <p class="con4card-when">2025.07.12 - 2025.10.26</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="con4btn2">
-                            <a href="javascript:void(0)">티켓 홈 바로가기 ></a>
-                        </div>
-                    </div>
-
+                        
                     </div>
                     <div class="crazy"></div>
-
-
+                    
+                    
                     <div class="con5">
                         <div class="con5w">
                             <h2>인터파크</h2>
@@ -925,27 +257,26 @@
                             <a href="javascript:void(0)">인터파크 라이브 바로가기 ></a>
                         </div>
                     </div>
-
-                    </div>
+                    
                 </div>
             </section>
         </main>
-
-
-
-
-        <footer>
-            <hr/>
-            <ul class="footnav">
-                <li><a href="javascript:void(0)">회사소개</a></li>
-                <span>|</span>
-                <li><a href="javascript:void(0)">이용약관</a></li>
-                <span>|</span>
-                <li><a href="javascript:void(0)">개인정보처리방침</a></li>
-                <span>|</span>
-                <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
-                <span>|</span>
-                <li><a href="javascript:void(0)">여행약관</a></li>
+    
+    
+    
+    
+    <footer>
+        <hr/>
+        <ul class="footnav">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <span>|</span>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <span>|</span>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <span>|</span>
+            <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
+            <span>|</span>
+            <li><a href="javascript:void(0)">여행약관</a></li>
                 <span>|</span>
                 <li><a href="javascript:void(0)">여행자보험 가입내역</a></li>
                 <span>|</span>
@@ -990,9 +321,10 @@
             </div>
         </footer>
     </div>
-
-
-
-
+    
+    
+    
+    
+    
 </body>
 </html>
