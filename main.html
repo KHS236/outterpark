@@ -7,11 +7,15 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./font/font.css">
-
-
-
+    <style>
+        @font-face {
+            font-family: 'logo-font';
+            src: url('./font/BnviitLasik.ttf');
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
     <div class="outer-wrapper layoutCenter">
         <header>
@@ -20,9 +24,9 @@
                     <a href="" class="main-logo">NOL outerpark</a>
                     <form class="search">
                         <input class="search-text" type="text" placeholder=" 놀기 좋은 여름, 혜택을 놀랍게">
-                        <button type="submit"><img class="submit-img" src="이미지/돋보기.svg" alt=""></button>
+                        <button type="submit"><img class="submit-img" src="pic/돋보기.svg" alt=""></button>
                     </form>
-                    <div class="event"><img style="width: 180px; height: 50px;" src="이미지/헤더.png" alt=""></div>
+                    <div class="event"><img style="width: 180px; height: 50px;" src="pic/헤더.png" alt=""></div>
                     <div class="page-change">
                         <a href="">NOL</a>
                         <a href="">TRIPLE</a>
@@ -36,32 +40,15 @@
                         <li><a href="">티켓</a></li>
                     </ul>
                     <ul class="service">
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">내 예약</a></li>
+                        <li><a href="">📍 로그인</a></li>
+                        <li class="service-dropdown">
+                            <a href="">✉ 내 예약</a>
+                            <ul class="service-reservation">
+                                <li><a href="">▪ 투어 예약  ▸ </a></a></li>
+                                <li><a href="">▪ 티켓 예약  ▸ </a></a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
-            </div>
-            <div class="subheader-wrapper layout-01">
-                <div class="menu-header">
-                    <ul class="category-menu1">
-                        <li><a href="">뮤지컬</a></li>
-                        <li><a href="">콘서트</a></li>
-                        <li><a href="">스포츠</a></li>
-                        <li><a href="">전시/행사</a></li>
-                        <li><a href="">클래식/무용</a></li>
-                        <li><a href="">아동/가족</a></li>
-                        <li><a href="">연극</a></li>
-                        <li><a href="">레저/캠핑</a></li>
-                        <li><a href="">토핑</a></li>
-                        <li><a href="">MD shop</a></li>
-                    </ul>
-                    <ul class="category-menu2">
-                        <li><a href="">랭킹</a></li>
-                        <li><a href="">오픈예정</a></li>
-                        <li><a href="">지역별</a></li>
-                        <li><a href="">공연장</a></li>
-                    </ul>
-
                 </div>
             </div>
 
@@ -132,81 +119,81 @@
                             <a href="javascript:void(0)">투어 홈 바로가기 ></a>
                         </div>
                     </div>
+
                     <div class="crazy"></div>
-                    <!-- <div class="con3"> 3은 안 할래요 ㅠㅠ-->
+                    
                         
-                        
-                        <div class="con4">
-                            <div class="con4w">
-                                <h2>티켓 랭킹</h2>
-                                <div class="con4txt">오늘 뭐 볼까? 지금 HOT한 공연</div>
+                    <div class="con4">
+                        <div class="con4w">
+                            <h2>티켓 랭킹</h2>
+                            <div class="con4txt">오늘 뭐 볼까? 지금 HOT한 공연</div>
+                        </div>
+                        <ul class="con4btn">
+                            <li><a href="javascript:void(0)">뮤지컬</a></li>
+                            <li><a href="javascript:void(0)">콘서트</a></li>
+                            <li><a href="javascript:void(0)">스포츠</a></li>
+                            <li><a href="javascript:void(0)">전시/행사</a></li>
+                            <li><a href="javascript:void(0)">클래식/무용</a></li>
+                            <li><a href="javascript:void(0)">아동/가족</a></li>
+                            <li><a href="javascript:void(0)">연극</a></li>
+                            <li><a href="javascript:void(0)">레저/캠핑</a></li>
+                        </ul>
+                        <div class="con4main">
+                            <div class="con4card-list">
+                                <a href="#" class="con4card">
+                                    <div class="con4card-img">
+                                        <img src="./pic/c4p1.jpg" alt="연극 사진">
+                                    </div>
+                                    <div class="con4card-content">
+                                        <p class="con4card-title">뮤지컬 &lt;멤피스&gt;</p>
+                                        <p class="con4card-where">충무아트센터 대극장</p>
+                                        <p class="con4card-when">2025.06.17 - 2025.09.21</p>
+                                    </div>
+                                </a>
                             </div>
-                            <ul class="con4btn">
-                                <li><a href="javascript:void(0)">뮤지컬</a></li>
-                                <li><a href="javascript:void(0)">콘서트</a></li>
-                                <li><a href="javascript:void(0)">스포츠</a></li>
-                                <li><a href="javascript:void(0)">전시/행사</a></li>
-                                <li><a href="javascript:void(0)">클래식/무용</a></li>
-                                <li><a href="javascript:void(0)">아동/가족</a></li>
-                                <li><a href="javascript:void(0)">연극</a></li>
-                                <li><a href="javascript:void(0)">레저/캠핑</a></li>
-                            </ul>
-                            <div class="con4main">
-                                <div class="con4card-list">
-                                    <a href="#" class="con4card">
-                                        <div class="con4card-img">
-                                            <img src="./pic/c4p1.jpg" alt="연극 사진">
-                                        </div>
-                                        <div class="con4card-content">
-                                            <p class="con4card-title">뮤지컬 &lt;멤피스&gt;</p>
-                                            <p class="con4card-where">충무아트센터 대극장</p>
-                                            <p class="con4card-when">2025.06.17 - 2025.09.21</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="con4card-list">
-                                    <a href="#" class="con4card">
-                                        <div class="con4card-img">
-                                            <img src="./pic/c4p2.jpg" alt="연극 사진">
-                                        </div>
-                                        <div class="con4card-content">
-                                            <p class="con4card-title">뮤지컬 &lt;팬텀&gt; 10주년 기념 공연</p>
-                                            <p class="con4card-where">세종문화회관 대극장</p>
-                                            <p class="con4card-when">2025.05.31 - 2025.8.11</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="con4card-list">
-                                    <a href="#" class="con4card">
-                                        <div class="con4card-img">
-                                            <img src="./pic/c4p3.jpg" alt="연극 사진">
-                                        </div>
-                                        <div class="con4card-content">
-                                            <p class="con4card-title">뮤지컬 &lt;맘마미아!&gt;</p>
-                                            <p class="con4card-where">LG아트센터 서울 LG SIGNATURE 홀</p>
-                                            <p class="con4card-when">2025.07.26 - 2025.10.25</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="con4card-list">
-                                    <a href="#" class="con4card">
-                                        <div class="con4card-img">
-                                            <img src="./pic/c4p4.jpg" alt="연극 사진">
-                                        </div>
-                                        <div class="con4card-content">
-                                            <p class="con4card-title">뮤지컬 &lt위키드&gt; 내한 공연(WICKED The Musical)</p>
-                                            <p class="con4card-where">블루스퀘어 신한카드홀</p>
-                                            <p class="con4card-when">2025.07.12 - 2025.10.26</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="con4card-list">
+                                <a href="#" class="con4card">
+                                    <div class="con4card-img">
+                                        <img src="./pic/c4p2.jpg" alt="연극 사진">
+                                    </div>
+                                    <div class="con4card-content">
+                                        <p class="con4card-title">뮤지컬 &lt;팬텀&gt; 10주년 기념 공연</p>
+                                        <p class="con4card-where">세종문화회관 대극장</p>
+                                        <p class="con4card-when">2025.05.31 - 2025.8.11</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="con4btn2">
-                                <a href="javascript:void(0)">티켓 홈 바로가기 ></a>
+                            <div class="con4card-list">
+                                <a href="#" class="con4card">
+                                    <div class="con4card-img">
+                                        <img src="./pic/c4p3.jpg" alt="연극 사진">
+                                    </div>
+                                    <div class="con4card-content">
+                                        <p class="con4card-title">뮤지컬 &lt;맘마미아!&gt;</p>
+                                        <p class="con4card-where">LG아트센터 서울 LG SIGNATURE 홀</p>
+                                        <p class="con4card-when">2025.07.26 - 2025.10.25</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="con4card-list">
+                                <a href="#" class="con4card">
+                                    <div class="con4card-img">
+                                        <img src="./pic/c4p4.jpg" alt="연극 사진">
+                                    </div>
+                                    <div class="con4card-content">
+                                        <p class="con4card-title">뮤지컬 &lt위키드&gt; 내한 공연(WICKED The Musical)</p>
+                                        <p class="con4card-where">블루스퀘어 신한카드홀</p>
+                                        <p class="con4card-when">2025.07.12 - 2025.10.26</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        
+                        <div class="con4btn2">
+                            <a href="javascript:void(0)">티켓 홈 바로가기 ></a>
+                        </div>
                     </div>
+                        
+                    
                     <div class="crazy"></div>
                     
                     
@@ -262,65 +249,62 @@
     
     
     
-    <footer>
-        <hr/>
-        <ul class="footnav">
-            <li><a href="javascript:void(0)">회사소개</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">이용약관</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">여행약관</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">여행자보험 가입내역</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">티켓판매내역</a></li>
-            <span>|</span>
-            <li><a href="javascript:void(0)">공지사항</a></li>
-            <span>|</span>
-            <li class="dropdown"><a href="javascript:void(0)">고객센터&#9662;</a>
-                <ul class="dropdown-menu">
-                    <li><a href="javascript:void(0)">투어 고객센터</a></li>
-                    <li><a href="javascript:void(0)">티켓 고객센터</a></li>
+        <footer>
+            <hr/>
+            <ul class="footnav">
+                <li><a href="javascript:void(0)">회사소개</a></li>
+                <span>|</span>
+                <li><a href="javascript:void(0)">이용약관</a></li>
+                <span>|</span>
+                <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                <span>|</span>
+                <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
+                <span>|</span>
+                <li><a href="javascript:void(0)">여행약관</a></li>
+                    <span>|</span>
+                    <li><a href="javascript:void(0)">여행자보험 가입내역</a></li>
+                    <span>|</span>
+                    <li><a href="javascript:void(0)">티켓판매내역</a></li>
+                    <span>|</span>
+                    <li><a href="javascript:void(0)">공지사항</a></li>
+                    <span>|</span>
+                    <li class="dropdown"><a href="javascript:void(0)">고객센터&#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">투어 고객센터</a></li>
+                            <li><a href="javascript:void(0)">티켓 고객센터</a></li>
+                        </ul>
+                    </li>
+                    <span>|</span>
+                    <li class="dropdown"><a href="javascript:void(0)">Language&#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Korean</a></li>
+                            <li><a href="javascript:void(0)">English</a></li>
+                            <li><a href="javascript:void(0)">Japanese</a></li>
+                            <li><a href="javascript:void(0)">Chinese</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <span>|</span>
-            <li class="dropdown"><a href="javascript:void(0)">Language&#9662;</a>
-                <ul class="dropdown-menu">
-                    <li><a href="javascript:void(0)">Korean</a></li>
-                    <li><a href="javascript:void(0)">English</a></li>
-                    <li><a href="javascript:void(0)">Japanese</a></li>
-                    <li><a href="javascript:void(0)">Chinese</a></li>
-                </ul>
-            </li>
-        </ul>
-        <hr/>
-        <div class="footmain">
-            <div class="footsection">
-                <h2>(주)놀유니버스</h2>
-                <p>주소 대구광역시 중구 중앙대로 366 9층,10층<br/>사업자등록번호 010-75-74510<br/>통신판매업신고 2024-대구수정-0912<br/>관광사업증 등록번호 : 제2025-000025호<br/>호스팅 서비스 제공자 (주)놀유니버스 | 대표이사 김홍섭</p>
-            </div>
-            <div class="footsection">
-                <h2>고객센터</h2>
-                <p>투어 1588-4334 | 티켓 1544-5551<br/>팩스 02-830-7777 | 이메일 fdsa5104@gmail.com<br/>해외항공 02-3456-7899 | 국내항공 02-9876-5432<br/>투어 1:1 문의 | 티켓 1:1 문의</p>
-            </div>
-            <div class="footsection">
-                <h2>전자금융거래 분쟁처리 담당정보</h2>
-                <p>투어 1588-4334 | 티켓 1544-5551<br/>팩스 02-830-7777 | 이메일 fdsa5104@gmail.com<br/>개인정보책임자 이메일@또적어야해</p>
-            </div>
-        </div>
-        <div class="footbar">
-            <p>(주)놀유니버스는 일부 상품의 통신판매중개자로서 통신판매의 당사자가 아니므로, 상품의 예약, 이용 및 환불 등 거래와 관련된 의무와 책임은 판매자에게 있으며 (주) 놀유니버스는 일체 책임을 지지 않습니다.</p>
-            <p>ⓒ Nol Universe Co., Ltd. All rights reserved.</p>
-        </div>
-        </footer>
+                <hr/>
+                <div class="footmain">
+                    <div class="footsection">
+                        <h2>(주)놀유니버스</h2>
+                        <p>주소 대구광역시 중구 중앙대로 366 9층,10층<br/>사업자등록번호 010-75-74510<br/>통신판매업신고 2024-대구수정-0912<br/>관광사업증 등록번호 : 제2025-000025호<br/>호스팅 서비스 제공자 (주)놀유니버스 | 대표이사 김홍섭</p>
+                    </div>
+                    <div class="footsection">
+                        <h2>고객센터</h2>
+                        <p>투어 1588-4334 | 티켓 1544-5551<br/>팩스 02-830-7777 | 이메일 fdsa5104@gmail.com<br/>해외항공 02-3456-7899 | 국내항공 02-9876-5432<br/>투어 1:1 문의 | 티켓 1:1 문의</p>
+                    </div>
+                    <div class="footsection">
+                        <h2>전자금융거래 분쟁처리 담당정보</h2>
+                        <p>투어 1588-4334 | 티켓 1544-5551<br/>팩스 02-830-7777 | 이메일 fdsa5104@gmail.com<br/>개인정보책임자 이메일@또적어야해</p>
+                    </div>
+                </div>
+                <div class="footbar">
+                    <p>(주)놀유니버스는 일부 상품의 통신판매중개자로서 통신판매의 당사자가 아니므로, 상품의 예약, 이용 및 환불 등 거래와 관련된 의무와 책임은 판매자에게 있으며 (주) 놀유니버스는 일체 책임을 지지 않습니다.</p>
+                    <p>ⓒ Nol Universe Co., Ltd. All rights reserved.</p>
+                </div>
+            </footer>
     </div>
-    
-    
-    
     
     
 </body>

@@ -53,6 +53,12 @@ p {
     border-radius: 10px;
     display: flex;
 }
+.outer-wrapper>header>.mainheader-wrapper>.main-header>.search>button{
+    outline:0;
+    border:none;
+    background-color:white;
+}
+
 
 .outer-wrapper>header>.mainheader-wrapper>.main-header>.search>button>.submit-img {
     width: 20px;
@@ -119,10 +125,30 @@ p {
 }
 
 .outer-wrapper>header>.mainheader-wrapper>.sub-header>.service>li {
-    width: 70px;
+    width: 80px;
     height: 100%;
 }
 
+.outer-wrapper>header>.mainheader-wrapper>.sub-header>.service>.service-dropdown{
+    position:relative;
+}
+
+.outer-wrapper>header>.mainheader-wrapper>.sub-header>.service>.service-dropdown:hover .service-reservation{
+    display:block;
+}
+.outer-wrapper>header>.mainheader-wrapper>.sub-header>.service>li>.service-reservation{
+    width: 150px;
+    height: 65px;
+    border:1px solid;
+    border-radius: 5px;
+    padding:10px 15px;
+    margin:16px 0;
+
+    position:absolute;
+    background-color:white;
+    display:none;
+    
+}
 
 
 /* category-header */
@@ -187,9 +213,6 @@ footer>.footnav{
 footer>.footnav>li{
     font-size: 0.9rem;
 }
-
-
-
 .dropdown{
     position: relative;
 }
@@ -203,7 +226,6 @@ footer>.footnav>li{
     border-radius: 15px;
     padding: 5px 0;
     list-style: none;
-
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .dropdown>.dropdown-menu>li{
@@ -256,4 +278,18 @@ footer>.footbar{
     text-align: left;
     color: gray;
 
+}
+
+@media (max-width:1080px){
+
+            .outer-wrapper>header>.mainheader-wrapper>.main-header>.search{
+                width:290px;
+            }
+
+            .outer-wrapper>header>.mainheader-wrapper>.sub-header{
+                display:none;
+            }
+            .outer-wrapper>header>.subheader-wrapper{
+                display:none;
+            }
 }
